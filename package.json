@@ -2,15 +2,31 @@
   "name": "react-simple-modal",
   "version": "1.0.1",
   "description": "A responsive and customizable React modal component for effortless display of interactive content in your React application. Easy to integrate, lightweight, and highly configurable, our component provided a seamless user experience with advanced customization options.",
+  "keywords": [
+    "'react'",
+    "'modal'",
+    "'dialog'",
+    "'component'",
+    "'ui'",
+    "'overlay'"
+  ],
   "author": "belaidSolene",
   "license": "MIT",
-  "repository": "belaidSolene/react-simple-modal",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "engines": {
     "node": ">=10"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/belaidSolene/react-simple-modal.git"
+  },
+  "homepage": "https://github.com/belaidSolene/react-simple-modal-library#readme",
   "scripts": {
     "build": "microbundle-crl --no-compress --format modern,cjs",
     "start": "microbundle-crl watch --no-compress --format modern,cjs",
@@ -46,12 +62,7 @@
     "prettier": "^3.1.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.1"
-  },
-  "files": [
-    "dist"
-  ],
-  "dependencies": {
+    "react-scripts": "^3.4.1",
     "@emotion/is-prop-valid": "^1.2.1"
   }
 }
