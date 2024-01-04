@@ -1,7 +1,7 @@
 {
   "name": "easy-peasy-modal-react",
   "version": "1.0.3",
-  "description": "A responsive and customizable React modal component for effortless display of interactive content in your React application. Easy to integrate, lightweight, and highly configurable, our component provided a seamless user experience with advanced customization options.",
+  "description": "A customizable React modal component for effortless display of interactive content in your React application. Easy to integrate, lightweight, and highly configurable, our component provided a seamless user experience with advanced customization options.",
   "keywords": [
     "'react'",
     "'modal'",
@@ -34,8 +34,6 @@
     "test": "run-s test:unit test:lint test:build",
     "test:build": "run-s build",
     "test:lint": "eslint .",
-    "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
-    "test:watch": "react-scripts test --env=jsdom",
     "predeploy": "cd example && npm install && npm run build",
     "deploy": "gh-pages -d example/build"
   },

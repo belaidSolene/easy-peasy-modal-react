@@ -5,10 +5,16 @@ import isPropValid from '@emotion/is-prop-valid'
 import Background from './components/Background'
 import Container from './components/Container'
 import CloseButton from './components/CloseButton'
+
+import { testIsOpen, testOnClose } from './utils/testProps'
+
 const Modal = ({ isOpen, onClose, children, style, closingButton = true }) => {
 	if (!isOpen) {
 		return null
 	}
+
+	testIsOpen(isOpen)
+	testOnClose(onClose)
 
 	return (
 		<StyleSheetManager

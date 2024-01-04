@@ -1,5 +1,5 @@
 import React from 'react'
-import Modal from 'react-simple-modal'
+import Modal from 'easy-peasy-modal-react'
 import styled from 'styled-components'
 
 const ConfirmationModal = ({ isModalOpen, setIsModalOpen }) => {
