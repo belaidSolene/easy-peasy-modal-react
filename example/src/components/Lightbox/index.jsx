@@ -76,10 +76,11 @@ const Lightbox = ({ isModalOpen, setIsModalOpen }) => {
 const MyModal = {
 	styledComponent: {
 		background: {
-			border: '5px solid rgba(67, 154, 134, 0.75)',
+			'background-color': 'rgba(0, 0, 0, 0.75)',
 		},
 		closeButton: {
-			border: '5px solid rgba(141, 106, 159, 0.75)',
+			'background-color': 'transparent',
+			'box-shadow': 'none',
 		},
 		container: {
 			width: '65vw',
@@ -88,7 +89,6 @@ const MyModal = {
 			padding: '20px',
 			overflow: 'hidden',
 			'border-radius': '25px',
-			border: '5px solid rgba(65, 101, 138, 0.75)',
 		},
 	},
 }

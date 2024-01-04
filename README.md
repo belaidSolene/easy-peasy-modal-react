@@ -2,7 +2,7 @@
 
 ## Description
 
-A responsive and customizable React modal component for the effortless display of interactive content in your React application. Easy to integrate, lightweight, and highly configurable, our component provides a seamless user experience with advanced customization options.
+Enhance your React application with a customizable modal component for seamless display of interactive content. Easy to integrate and highly configurable, our component provides a user-friendly experience with advanced customization options.
 
 ## Installation
 
@@ -12,13 +12,6 @@ npm install easy-peasy-modal-react
 ```
 
 ## Usage
-
-1. Import the Modal component into your React project:
-
-```bash
-import Modal from 'easy-peasy-modal-react'
-
-```
 
 1. Use the Modal component in your React component:
 
@@ -40,7 +33,7 @@ const YourComponentModal({isModalOpen, setIsModalOpen}) {
 }
 ```
 
-1. Declare a useState in the file where you want your modal to appear and trigger an event to make it appear. In this example, I'm using a button:
+1. Declare a **useState** in the file where you want your modal to appear and trigger an event to make it appear. In this example, I'm using a button:
 
 ```bash
 const [isModalOpen, setIsModalOpen] = useState(false)
@@ -130,8 +123,14 @@ const MyStyledModal = {
 ## Props
 
 Props
-:green_square: `isOpen`: A boolean indicating if the modal is open or not
-:blue_square: `onClose`: The function that will close the modal
-:purple_square: `children`: The components that will appear in the modal
-:red_square: `style`: The styling object for the modal
-:orange_square: `closingButton`: A boolean to design your own closing button
+
+- `isOpen` (required): A boolean indicating if the modal is open or not
+- `onClose` (required): The function that will close the modal
+- `children` (required): The components that will appear in the modal
+- `style`: The styling object for the modal
+- `closingButton`: A boolean (default: `true`) to indicate whether the default closing button should be displayed. Set it to `false` if you want to use your own custom closing button.
+
+## Example
+
+Discover usage examples for **easy-peasy-modal-react** in the provided example files, accessible in the library's GitHub directory.
+[GitHub easy-peasy-modal-react Examples](https://github.com/belaidSolene/easy-peasy-modal-react/blob/master/example/README.md)

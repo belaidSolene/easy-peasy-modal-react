@@ -1,15 +1,22 @@
-export const testIsOpen = (isOpen) => {
+export const testIsBoolean = (isOpen) => {
 	if (typeof isOpen !== 'boolean') {
 		throw new Error('isOpen must be a boolean')
 	}
 }
 
-export const testOnClose = (onClose) => {
+export const testIsFct = (onClose) => {
 	if (typeof onClose !== 'function') {
 		throw new Error('onClose must be a function')
 	}
 }
 
+export const ensureChildren = (children) => {
+	if (!children) {
+		throw new Error(
+			'The "children" prop must be defined and should contain components to appear in the modal.',
+		)
+	}
+}
 export const testOnStyle = (style) => {
 	if (!validateStyleObject(style)) {
 		throw new Error('Style is invalid')
