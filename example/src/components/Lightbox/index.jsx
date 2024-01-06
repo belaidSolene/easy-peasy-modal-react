@@ -7,6 +7,7 @@ import { ReactComponent as ArrowPrev } from '../../assets/arrowPrev.svg'
 import { ReactComponent as ArrowNext } from '../../assets/arrowNext.svg'
 
 import styled from 'styled-components'
+
 const Lightbox = ({ isModalOpen, setIsModalOpen }) => {
 	const closeModal = () => {
 		setIsModalOpen(false)
@@ -21,9 +22,7 @@ const Lightbox = ({ isModalOpen, setIsModalOpen }) => {
 	]
 
 	const [index, setIndex] = useState(0)
-
 	const numberPic = pictures.length
-
 	let currentPic = pictures[index]
 
 	const content = (

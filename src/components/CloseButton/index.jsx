@@ -8,7 +8,7 @@ import { DefaultClosingButton, generateStyles } from '../../utils/defaultStyle'
 // CloseButton component that renders a close button with provided styles
 const CloseButton = ({ style, onClose }) => {
 	// SVG for the close button
-	const closingBtn = (
+	const closingBtnSVG = (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
 			width='24'
@@ -37,7 +37,7 @@ const CloseButton = ({ style, onClose }) => {
 				onClick={onClose}
 				className={usingClassName?.closeButton}
 			>
-				{closingBtn}
+				{closingBtnSVG}
 			</button>
 		)
 	} else {
@@ -47,7 +47,7 @@ const CloseButton = ({ style, onClose }) => {
 				onClick={onClose}
 				{...usingStyledComponent?.closeButton}
 			>
-				{closingBtn}
+				{closingBtnSVG}
 			</StyledClosingButton>
 		)
 	}
